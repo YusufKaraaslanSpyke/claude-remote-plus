@@ -1,0 +1,31 @@
+{
+  "name": "claude-remote-plus",
+  "version": "0.1.0",
+  "description": "Daemon + MCP server that orchestrates Claude Code remote-control sessions with hot-swappable projects",
+  "type": "module",
+  "bin": {
+    "crp": "./dist/bin/crp.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^5.1.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.1"
+  },
+  "license": "MIT"
+}
